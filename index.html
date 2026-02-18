@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Meu Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Portfólio</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+
+nav {
+  display: flex;
+  background: #1f1f1f;
+}
+
+nav button {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #333;
+}
+
+nav button.active {
+  background: #00bcd4;
+}
+
+.tab {
+  display: none;
+  padding: 30px;
+}
+
+.tab.active {
+  display: block;
+}
+</style>
 </head>
+
 <body>
-  <h1>Olá mundo!</h1>
-  <p>Meu primeiro site 🎉</p>
+
+<nav>
+  <button class="tabBtn active" onclick="openTab('sobre')">Sobre mim</button>
+  <button class="tabBtn" onclick="openTab('contatos')">Contatos</button>
+  <button class="tabBtn" onclick="openTab('produtos')">Produtos</button>
+</nav>
+
+<div id="sobre" class="tab active">
+  <h1>Sobre mim</h1>
+  <p>Olá! Eu sou Leo 👋</p>
+  <p>Desenvolvedor de addons e criador de projetos.</p>
+</div>
+
+<div id="contatos" class="tab">
+  <h1>Contatos</h1>
+  <p>Email: seuemail@email.com</p>
+  <p>Discord: SeuNick#0000</p>
+</div>
+
+<div id="produtos" class="tab">
+  <h1>Produtos</h1>
+  <p>🔥 Addon Survival Hardcore</p>
+  <p>🛠 Sistema de HUD personalizado</p>
+</div>
+
+<script>
+function openTab(tabId) {
+  let tabs = document.querySelectorAll(".tab");
+  let buttons = document.querySelectorAll(".tabBtn");
+
+  tabs.forEach(tab => tab.classList.remove("active"));
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  document.getElementById(tabId).classList.add("active");
+  event.target.classList.add("active");
+}
+</script>
+
 </body>
 </html>
