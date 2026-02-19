@@ -1,12 +1,19 @@
 /*
-* #4981F2 - Azul
-* #578BF2 - Azul Opaco
-* #99B6F2 - Azul Opaco (+)
-* #9BD1F2 - Azul Bebê
-* #262626 - Preto
-*/
+🔴 Vermelhos principais
+#E10600 → Vermelho forte (estilo esportivo)
+#B00020 → Vermelho elegante
+#FF3B3B → Vermelho vibrante
+#8B0000 → Vermelho escuro mais sério
 
-/*File: styles/styles.css*/
+⚫ Pretos e neutros
+#000000 → Preto puro
+#121212 → Preto moderno (melhor que puro)
+#1E1E1E → Fundo elegante
+#262626 → Cinza escuro equilibrado
+
+⚪ Para contraste
+#F5F5F5 → Branco suave
+*/
 
 *{
   padding: 0;
